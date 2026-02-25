@@ -1,0 +1,139 @@
+1.CULMS  LOGIN BUTTON TESTING................
+https://cu.edu.pk/login.php       ye paste kr do uper
+ 
+Given I am on the "https://cu.edu.pk/login.php"
+When I select the role as "student"
+And I enter the registration number as "13824"
+And I enter the password as "@Noentry321"
+And I click on the login button
+Then I should be redirected to the dashboard
+
+
+
+2.YOUTUBE SEARCH BUTTON TESTING................
+https://www.youtube.com/      ye paste kr do uper
+
+type 'search' as 'web development'
+click 'search button'
+see 'web development'
+
+
+3.https://cityuniversity.edu.pk/    ye paste kr do uper..............
+
+Given I am on the "https://cityuniversity.edu.pk/"
+When I set viewport to '375x812'
+Then I wait for element 'header' to be visible
+When I set viewport to '768x1024'
+Then I wait for element 'header' to be visible
+When I set viewport to '1366x768'
+Then I wait for element 'header' to be visible
+
+
+
+
+5.WIKIPEDIA NAVIGATION TESTING...........
+https://www.wikipedia.org/       ye paste kr do uper
+
+Given I am on the "https://www.wikipedia.org/"
+When I click on "English"
+Then I see "Wikipedia"
+And the title should be "Wikipedia, the free encyclopedia"
+
+
+6.GOOGLE SEARCH TESTING...................
+https://www.google.com/       ye paste kr do uper
+
+Given I am on the "https://www.google.com/"
+When I type "OpenAI" into "q"
+And I press the "Enter" key
+Then I see "OpenAI"
+
+
+7.HACKER NEWS NAVIGATION TESTING...............
+https://news.ycombinator.com/       ye paste kr do uper
+
+Given I am on the "https://news.ycombinator.com/"
+When I click on ".pagetop a[href='newest']"
+Then I see "new"
+And the title should be "New Links | Hacker News"
+
+
+8.OPENSTREETMAP SEARCH TESTING...............
+https://www.openstreetmap.org/       ye paste kr do uper
+
+Given I am on the "https://www.openstreetmap.org/"
+When I type "London" into "#query"
+And I press the "Enter" key
+Then I see "London"
+
+
+15.QUOTES TO SCRAPE NAVIGATION.....................
+http://quotes.toscrape.com/       ye paste kr do uper
+
+Given I am on the "http://quotes.toscrape.com/"
+When I click on ".tag-item a"
+Then I see "love"
+And I see "inspirational"
+
+
+22.PYPI PACKAGE SEARCH........................
+https://pypi.org/       ye paste kr do uper
+
+Given I am on the "https://pypi.org/"
+When I type "requests" into "#search"
+And I press the "Enter" key
+Then I see "requests"
+
+
+23.FAKE STORE API DOCUMENTATION................
+https://fakestoreapi.com/       ye paste kr do uper
+
+Given I am on the "https://fakestoreapi.com/"
+Then I see "Fake store rest API"
+And I see "products"
+
+
+
+26.MICROSOFT DOCUMENTATION PERFORMANCE................
+https://learn.microsoft.com/       ye paste kr do uper
+
+Given I am on the "https://learn.microsoft.com/"
+Then site loading speed should be acceptable
+And the header should remain visible
+
+37.SAUCE DEMO - BEST WEBSITE FOR BDD TESTING................/...........
+https://www.saucedemo.com/       ye paste kr do uper
+
+Given I am on the "https://www.saucedemo.com/"
+When I enter "standard_user" into "#user-name"
+And I enter "secret_sauce" into "#password"
+And I click on "#login-button"
+Then I see "Products"
+And I see "Swag Labs"
+
+
+
+
+39.SAUCE DEMO - INVALID LOGIN ERROR................
+https://www.saucedemo.com/       ye paste kr do uper
+
+Given I am on the "https://www.saucedemo.com/"
+When I enter "wrong_user" into "#user-name"
+And I enter "wrong_pass" into "#password"
+And I click on "#login-button"
+Then I see "Epic sadface"
+And I see "Username and password do not match"
+
+
+40.SAUCE DEMO - LOGOUT TEST.........................................................
+https://www.saucedemo.com/       ye paste kr do uper
+
+Given I am on the "https://www.saucedemo.com/"
+When I enter "standard_user" into "#user-name"
+And I enter "secret_sauce" into "#password"
+And I click on "#login-button"
+And I click on "#react-burger-menu-btn"
+And I click on "#logout_sidebar_link"
+Then I should be redirected to "https://www.saucedemo.com/"
+
+
